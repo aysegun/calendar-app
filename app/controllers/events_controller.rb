@@ -1,4 +1,5 @@
 class EventsController < ApplicationController
+  before_action :set_event, only: %i[show destroy edit]
 
   def new
     @event = Event.new
@@ -9,12 +10,30 @@ class EventsController < ApplicationController
   end
 
   def create
-    @event = Event.new
+    @event = Event.new(event_params)
     if @event.save
       redirect_to events_path
     else
       render 'new', status: :unprocessable_entity
     end
+  end
+
+  def show; end
+  def edit; end
+
+  def update
+    @event.update(status: params[:status])
+
+    redirect_to events_path
+  end
+
+  def destroy
+    @event.destroy
+    redirect_to events_path, status: :see_other
+  end
+
+  def set_van
+    @event = Event.find(params[:id])
   end
 
   def event_params
