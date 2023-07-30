@@ -1,13 +1,19 @@
-<div class="form">
-  <%= simple_form_for (@event) do |f| %>
-  <%= f.input :title, id:"title-input", placeholder: "todos"%>
-  <%= f.input :description, placeholder: "Write max. 600 characters" %>
-  <%= f.input :start_time %>
-  <%= f.input :end_time%>
+<div class="container">
+  <h1>New Event</h1>
+  <div class="form">
+    <%= simple_form_for (@event) do |f| %>
+    <%= f.input :title, id:"title-input", placeholder: "todos"%>
+    <%= f.input :description, placeholder: "Write max. 600 characters" %>
+    <%= f.input :start_time %>
+    <%= f.input :end_time%>
 
 
-    <div class="submit-div">
-    <%= f.submit 'Submit', id: "submit-button" %>
-  <% end %>
+      <div class="submit-div">
+      <%= f.submit 'Create Event', id: "submit-button" %>
+    <% end %>
+    </div>
+  </div>
+  <div>
+    <%= link_to "Back to events", events_path %>
   </div>
 </div>

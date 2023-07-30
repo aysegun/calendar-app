@@ -1,0 +1,8 @@
+<div class="cards-container">
+  <% @events.each do |event| %>
+    <div class="card">
+      <h3><%= event.title %></h3>
+      <p><%= event.end_time %></p>
+    </div>
+  <% end %>
+</div>
