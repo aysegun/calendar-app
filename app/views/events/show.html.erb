@@ -1,9 +1,8 @@
-<div class="container">
-
-  <%=@event.title%>
-
-  <%=@event.description%>
-
-  <p>start_time: <%=@event.start_time%></p>
-  <p>end_time: <%=@event.end_time%></p>
+<div class="container mt-5">
+  <div class="card">
+    <h3>Subject: <%=@event.title%></h3>
+    <p>Details: <%=@event.description%></p>
+    <p>Start_time: <%=@event.start_time%></p>
+    <p>End_time: <%=@event.end_time%></p>
+  </div>
 </div>
