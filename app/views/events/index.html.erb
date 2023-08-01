@@ -1,11 +1,13 @@
 <div class="cards-container">
   <% @events.each do |event| %>
-    <div class="card">
-    <%= image_tag "https://source.unsplash.com/GANqCr1BRTU/300x300" %>
-      <div class="card-info ms-3">
-        <h3><%= event.title %></h3>
-        <p>Last day: <%= event.end_time %></p>
+    <%= link_to event_path(event) do %>
+      <div class="card">
+        <%= image_tag "https://source.unsplash.com/GANqCr1BRTU/300x300" %>
+        <div class="card-info ms-3 mt-3">
+          <h3><%= event.title %></h3>
+          <p>Last day: <%= event.end_time %></p>
+        </div>
       </div>
-    </div>
+    <% end %>
   <% end %>
 </div>
