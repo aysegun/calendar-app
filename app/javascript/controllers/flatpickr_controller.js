@@ -1,15 +1,20 @@
-import { Controller } from "@hotwired/stimulus"
+import { Controller } from "@hotwired/stimulus";
 import flatpickr from "flatpickr";
-import rangePlugin from "flatpickr/dist/plugins/rangePlugin";
+//import rangePlugin from "flatpickr/dist/plugins/rangePlugin";
 
 // Connects to data-controller="flatpickr"
 export default class extends Controller {
+  // connect() {
+  //   flatpickr(this.element, {
+  //     altInput: true,
+  //     plugins: [new rangePlugin({
+  //       input: "#booking_end_date"
+  //     })]
+  //   });
+  // }
   connect() {
-    flatpickr(this.element, {
-      altInput: true,
-      plugins: [new rangePlugin({
-        input: "#booking_end_date"
-      })]
+    new flatpickr(this.element, {
+      enableTime: true
     });
   }
 }
