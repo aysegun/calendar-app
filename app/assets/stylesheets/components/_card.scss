@@ -1,4 +1,68 @@
 .card {
-  width: 350px;
+  background-size: cover;
+  background-position: center;
+  height: 180px;
+  color: black;
+  font-size: 24px;
+  font-weight: bold;
 
+  border-radius: 5px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  height: 300px;
+  overflow: hidden;
+  position: relative;
+}
+
+.cards-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 30px;
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.cards-container img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+.card-info h3 {
+  font-size: 16px;
+}
+.card-info p {
+  font-size: 13px;
+  font-weight: lighter;
+}
+
+// New event card
+.wrapper {
+  width: 40%;
+  margin: auto;
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 20px;
+  border-radius: 15px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  input {
+    border-radius: 6px;
+  }
+}
+
+.wrapper-event {
+  height: 100%;
+  display: flex;
+}
+
+.background {
+  height: 100vh;
+  width: 100%;
+  background-image: url("https://source.unsplash.com/OQMZwNd3ThU/1600x900");
+  background-position: cover;
+  background-size: cover;
+  padding: 30px;
+}
+
+.header-event {
+  text-align: center;
 }

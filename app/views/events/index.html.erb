@@ -1,8 +1,11 @@
 <div class="cards-container">
   <% @events.each do |event| %>
     <div class="card">
-      <h3><%= event.title %></h3>
-      <p><%= event.end_time %></p>
+    <%= image_tag "https://source.unsplash.com/GANqCr1BRTU/300x300" %>
+      <div class="card-info ms-3">
+        <h3><%= event.title %></h3>
+        <p>Last day: <%= event.end_time %></p>
+      </div>
     </div>
   <% end %>
 </div>
