@@ -10,16 +10,18 @@
                         input_html: {class: "title-input"} %>
             <%= f.input :description, placeholder: "Write max. 600 characters",
                         input_html: {class: "title-input"} %>
-            <%= f.input :start_time, as: :string,
-                        input_html: { data: { controller: "flatpickr" } } %>
-            <%= f.input :end_time, as: :string,
-                        input_html: { data: { controller: "flatpickr" } }%>
+            <div class="time-input">
+              <%= f.input :start_time, as: :string,
+                          input_html: { data: { controller: "flatpickr" } } %>
+              <%= f.input :end_time, as: :string,
+                          input_html: { data: { controller: "flatpickr" } }%>
+            </div>
             <div class="submit-div mt-3">
             <%= f.submit 'Create Event', id: "submit-button" %>
           <% end %>
           </div>
         </div>
-        <div class="mt-3">
+        <div class="back-button mt-3">
           <%= link_to "Back to events", events_path %>
         </div>
 

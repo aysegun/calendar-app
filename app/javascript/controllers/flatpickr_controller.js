@@ -8,13 +8,13 @@ export default class extends Controller {
   //   flatpickr(this.element, {
   //     altInput: true,
   //     plugins: [new rangePlugin({
-  //       input: "#booking_end_date"
-  //     })]
+  //     input: "#secondRangeInput"
+  //    })]
   //   });
   // }
   connect() {
     new flatpickr(this.element, {
-      enableTime: true
+    enableTime: true
     });
   }
 }
