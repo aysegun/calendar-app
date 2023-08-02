@@ -1,0 +1,31 @@
+<div class="background">
+  <div class="wrapper-event">
+    <div class="wrapper">
+      <div class="header-event">
+        <h3>Edit your event</h3>
+        <p>Change properties</p>
+      </div>
+        <div class="form">
+          <%= simple_form_for (@event) do |f| %>
+            <%= f.input :title, placeholder: "todos",
+                        input_html: {class: "title-input"} %>
+            <%= f.input :description, placeholder: "Write max. 600 characters",
+                        input_html: {class: "title-input"} %>
+            <div class="time-input">
+              <%= f.input :start_time, as: :string,
+                          input_html: { data: { controller: "flatpickr" } } %>
+              <%= f.input :end_time, as: :string,
+                          input_html: { data: { controller: "flatpickr" } }%>
+            </div>
+            <div class="submit-div mt-3">
+            <%= f.submit 'Edit Event', id: "submit-button" %>
+          <% end %>
+          </div>
+        </div>
+        <div class="back-button mt-3">
+          <%= link_to "Back to events", events_path %>
+        </div>
+
+    </div>
+  </div>
+</div>

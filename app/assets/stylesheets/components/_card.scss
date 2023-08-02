@@ -70,3 +70,23 @@
 .header-event {
   text-align: center;
 }
+
+// show card
+.show-card{
+  background-size: cover;
+  background-position: center;
+  height: 180px;
+  color: black;
+  font-size: 24px;
+  font-weight: bold;
+
+  border-radius: 5px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  height: 300px;
+  overflow: hidden;
+  position: relative;
+}
+
+.show-cards-container {
+
+}
