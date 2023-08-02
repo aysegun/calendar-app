@@ -32,6 +32,8 @@ class EventsController < ApplicationController
     redirect_to events_path, status: :see_other
   end
 
+  private
+
   def set_event
     @event = Event.find(params[:id])
   end
