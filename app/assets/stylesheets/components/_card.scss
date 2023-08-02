@@ -72,21 +72,43 @@
 }
 
 // show card
-.show-card{
-  background-size: cover;
-  background-position: center;
-  height: 180px;
+.show-cards-container a {
+  text-decoration: none;
   color: black;
-  font-size: 24px;
-  font-weight: bold;
 
-  border-radius: 5px;
+}
+.show-cards-container {
+  height: auto;
   box-shadow: 0 0 15px rgba(0,0,0,0.2);
-  height: 300px;
-  overflow: hidden;
-  position: relative;
+  border-radius: 5px;
+  margin: 30px;
+  padding: 35px;
+  align-items: center;
 }
 
-.show-cards-container {
+.left-card {
+  margin-top: 30px;
+  padding: 20px;
+  text-align: justify;
+  vertical-align: middle;
+}
 
+.right-card {
+    margin-top: 20px;
+    height: 400px;
+    padding-left: 10px;
+}
+
+.image-card {
+  padding: 20px;
+  object-fit: cover;
+  height: 400px;
+  background-repeat: no-repeat;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  flex-grow: 1;
+  align-items: flex-end;
+  display: flex;
+  color:white;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
 }

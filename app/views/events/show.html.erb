@@ -1,15 +1,17 @@
-<div class="show-cards-container mt-5">
-  <div class="show-card">
-    <%= image_tag "https://source.unsplash.com/NIJuEQw0RKg/300x300" %>
-    <div class="show-card-info">
-      <h3>Subject: <%=@event.title%></h3>
-      <p>Details: <%=@event.description%></p>
-      <p>Start_time: <%=@event.start_time%></p>
-      <p>End_time: <%=@event.end_time%></p>
+<div class="show-cards-container mt-3 d-flex">
+  <div class="left-card">
+    <h3><%=@event.title%></h3>
+    <p>Details: <%=@event.description%></p>
+    <p>Start_time: <%=@event.start_time%></p>
+    <p>End_time: <%=@event.end_time%></p>
+  </div>
+  <div class="right-card">
+    <div class="image-card">
+      <%= image_tag "https://source.unsplash.com/NIJuEQw0RKg/300x300" %>
     </div>
-    <div>
+    <div class="show-card-buttons">
       <%= link_to "Edit", edit_event_path %>
-      <%= link_to "Delete", @event, method: :delete, data: { confirm: "Are you sure you want to delete event?"} %></p>
+      <%= link_to "Delete", @event, method: :delete, confirm: "Are you sure you want to delete event?" %></p>
     </div>
   </div>
 </div>
