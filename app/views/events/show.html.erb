@@ -11,7 +11,7 @@
     </div>
     <div class="show-card-buttons">
       <%= link_to "Edit", edit_event_path %>
-      <%= link_to "Delete", @event, method: :delete, confirm: "Are you sure you want to delete event?" %></p>
+      <%= button_to "Delete", @event, method: :delete, data: {turbo_confirm: "Are you sure you want to delete event?"} %></p>
     </div>
   </div>
 </div>
