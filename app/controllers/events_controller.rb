@@ -1,5 +1,5 @@
 class EventsController < ApplicationController
-  before_action :set_event, only: %i[show destroy edit]
+  before_action :set_event, only: %i[show destroy edit update]
 
   def new
     @event = Event.new
@@ -22,9 +22,11 @@ class EventsController < ApplicationController
   def edit; end
 
   def update
-    @event.update(status: params[:status])
-
-    redirect_to events_path
+    if @event.update(event_params)
+      redirect_to events_path
+    else
+      render edit
+    end
   end
 
   def destroy
