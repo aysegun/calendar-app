@@ -1,0 +1,32 @@
+.navbar-calendar {
+  display: flex;
+  justify-content: space-between;
+  background:transparent;
+  list-style-type: none;
+  box-sizing: border-box;
+  height: 55px;
+  //align-items: center;
+  margin-top: 0%;
+  padding: 0px 50px;
+  position: sticky;
+  top: 0;
+}
+.navbar-calendar .navbar-collapse{
+  flex-grow: 1;
+}
+.navbar-nav li {
+  padding-left: 10px;
+  padding-right: 10px;
+
+}
+
+.navbar-nav a {
+  color: black;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.navbar {
+  transition: all 0.5s;
+}
