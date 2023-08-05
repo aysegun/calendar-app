@@ -81,26 +81,27 @@
   height: auto;
   box-shadow: 0 0 15px rgba(0,0,0,0.2);
   border-radius: 5px;
-  margin: 30px;
-  padding: 35px;
-  align-items: center;
+  margin: 15px;
+  padding: 15px;
+  align-items:center;
+  width: 70%;
 }
 
 .left-card {
-  margin-top: 30px;
+  //margin-top: 20px;
   padding: 20px;
   text-align: justify;
   vertical-align: middle;
 }
 
 .right-card {
-    margin-top: 20px;
     height: 400px;
-    padding-left: 10px;
+    padding-left: 80px;
+    margin-bottom: 50px;
 }
 
 .image-card {
-  padding: 20px;
+  //padding: 20px;
   object-fit: cover;
   height: 400px;
   background-repeat: no-repeat;
@@ -111,4 +112,8 @@
   display: flex;
   color:white;
   text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+}
+
+.show-card-buttons {
+  align-items: end;
 }
