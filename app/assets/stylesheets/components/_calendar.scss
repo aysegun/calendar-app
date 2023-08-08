@@ -8,6 +8,17 @@
   font-family: Arial, Helvetica, sans-serif;
   background-color: #fff;
 }
+.calendar-title {
+  font-size: 40px;
+  font-weight: bolder;
+}
+.calendar-heading a {
+  color: rgb(95, 2, 2);
+  text-decoration: none;
+  margin: auto 10px;
+  font-size: 40px;
+}
+
 .day {
   padding: 5px;
   border: 1px solid #ccc;
