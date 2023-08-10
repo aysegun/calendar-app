@@ -2,8 +2,6 @@
   <%= link_to "New Event", new_event_path %>
 </div>
 <div class="container mt-5 text-center">
-  <h1>home page</h1>
-  <p>Find me on app/views/pages/home.html.erb</p>
   <%= month_calendar(events: @events) do |date, events| %>
     <div class="day">
       <%= date %>
