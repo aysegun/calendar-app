@@ -24,6 +24,7 @@
   //border: 1px solid #ccc;
   text-align: left;
   line-height: 78px;
+  width: 80px;
   font-weight:bold;
 }
 
@@ -73,7 +74,13 @@
 .prev-month {
   color: #ccc;
 }
-.next-month {
+.prev-month .day {
+  color: #ccc;
+}
+.next-month{
+  color: #ccc;
+}
+.next-month .day{
   color: #ccc;
 }
 .current-month {
@@ -90,11 +97,13 @@
   background-color: #C0D8C0;
   margin-top: 5px;
   min-height: 50px;
-  text-align: center;
+  text-align: left;
+  //width: fit-content;
 }
 
 .card-title a {
-  color:black;
+  color: white;
+  font-weight: normal;
   text-decoration: none;
 }
 th {
