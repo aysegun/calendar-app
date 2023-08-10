@@ -22,30 +22,38 @@
 .day {
   padding: 5px;
   //border: 1px solid #ccc;
-  text-align: center;
+  text-align: left;
   line-height: 78px;
+  font-weight:bold;
 }
 
 .wday-0 {
   color: #000;
+  border: 1px solid #ccc;
 }
 .wday-1 {
   color: #000;
+  border: 1px solid #ccc;
 }
 .wday-2 {
   color: #000;
+  border: 1px solid #ccc;
 }
 .wday-3 {
   color: #000;
+  border: 1px solid #ccc;
 }
 .wday-4 {
   color: #000;
+  border: 1px solid #ccc;
 }
 .wday-5 {
   color: #000;
+  border: 1px solid #ccc;
 }
 .wday-6 {
   color: #f00;
+  border: 1px solid #ccc;
 }
 
 .today {
@@ -88,5 +96,7 @@
 .card-title a {
   color:black;
   text-decoration: none;
-
+}
+th {
+  border: 1px solid #ccc;
 }
