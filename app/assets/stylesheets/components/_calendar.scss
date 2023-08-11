@@ -26,6 +26,7 @@
   line-height: 78px;
   width: 80px;
   font-weight:bold;
+  box-sizing: border-box;
 }
 
 .wday-0 {
@@ -35,6 +36,7 @@
 .wday-1 {
   color: #000;
   border: 1px solid #ccc;
+
 }
 .wday-2 {
   color: #000;
@@ -96,10 +98,12 @@
   border-radius: 5px;
   background-color: #C0D8C0;
   margin-top: 5px;
-  min-height: 50px;
-  height: 14px;
+  //min-height: 50px;
   text-align: left;
   //width: fit-content;
+  box-sizing: border-box;
+  min-width: max-content; //prev month did not affect
+  padding: 5px;
 }
 
 .card-title a {
