@@ -33,14 +33,22 @@
   color: #000;
   border: 1px solid #ccc;
 }
+.wday-0 .card-title {
+  background-color: #E9B384;
+}
 .wday-1 {
   color: #000;
   border: 1px solid #ccc;
-
+}
+.wday-1 .card-title{
+  background-color: #E0E3F4;
 }
 .wday-2 {
   color: #000;
   border: 1px solid #ccc;
+}
+.wday-2 .card-title{
+  background-color: #E8DFCA;
 }
 .wday-3 {
   color: #000;
@@ -50,13 +58,22 @@
   color: #000;
   border: 1px solid #ccc;
 }
+.wday-4 .card-title {
+  background-color: #AEBDCA;
+}
 .wday-5 {
   color: #000;
   border: 1px solid #ccc;
 }
+.wday-5 .card-title {
+  background-color: #F3E9DD;
+}
 .wday-6 {
   color: #f00;
   border: 1px solid #ccc;
+}
+.wday-6 .card-title {
+  background-color: #E9B384;
 }
 
 .today {
