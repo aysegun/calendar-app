@@ -1,3 +1,4 @@
+
 <div class="cards-container">
   <% @events.sort_by(&:end_time).each do |event| %>
     <%= link_to event_path(event) do %>
@@ -5,7 +6,7 @@
         <%= image_tag "https://source.unsplash.com/GANqCr1BRTU/300x300" %>
         <div class="card-info ms-3 mt-3">
           <h3><%= event.title %></h3>
-          <p>Last day: <%= event.end_time %></p>
+          <p><span style= "font-weight: bold">Last day:</span> <%= event.end_time.strftime('%a, %B %e, %y until %l:%M %P') %></p>
         </div>
       </div>
     <% end %>
