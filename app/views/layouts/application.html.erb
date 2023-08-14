@@ -12,7 +12,7 @@
 
   <body>
     <%= render "shared/flashes" %>
-    <% if params[:action] != 'home' %>
+    <% if params[:action] == 'show' || params[:action] == 'index' %>
       <%= render "shared/navbar" %>
     <% end %>
     <%= yield %>
