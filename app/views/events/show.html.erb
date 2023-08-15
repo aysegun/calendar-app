@@ -1,24 +1,25 @@
-<div class="show-cards-container mt-3 d-flex">
-  <div class="left-card">
-    <h3><%=@event.title%></h3>
-    <p>Details: <%=@event.description%></p>
-    <p>Start_time: <%=@event.start_time%></p>
-    <p>End_time: <%=@event.end_time%></p>
-  </div>
-  <div class="right-card">
-    <div class="image-card">
-      <%= image_tag "https://source.unsplash.com/NIJuEQw0RKg/300x300" %>
-    </div>
-    <div class="show-card-buttons d-flex">
-      <%= link_to "Edit", edit_event_path, class: "btn btn-primary" %>
-      <%= button_to "Delete", @event, method: :delete, data: {turbo_confirm: "Are you sure you want to delete event?"} %></p>
-    </div>
+<div class ="banner" style="background-image: url(https://source.unsplash.com/collection/1783182/1000x1000)", height:350;>
+  <div class ="banner-container">
+      <h1><%=@event.title%></h1>
   </div>
 </div>
 
-<div>
-  <%= link_to "Back events", events_path %>
-</div>
-<div>
-  <%= link_to "New event", new_event_path %>
+<div class="left-card">
+  <div class= "container">
+    <div class="row">
+      <h3><%=@event.title%></h3>
+      <div class="col-12 d-flex">
+        <p style="font-weight: bold" class="col-3">Start_time: </p>
+        <p class="col-9"><%=@event.start_time.strftime('%a, %B %e, %y until %l:%M %P')%></p>
+      </div>
+      <div class="col-12 d-flex">
+        <p style="font-weight: bold" class="col-3">End_time: </p>
+        <p class="col-9"><%=@event.end_time.strftime('%a, %B %e, %y until %l:%M %P')%></p>
+      </div>
+      <div class="col-12 d-flex">
+        <p style="font-weight: bold" class="col-3">Details: </p>
+        <p class="col-9"><%=@event.description%></p>
+      </div>
+    </div>
+  </div>
 </div>
