@@ -125,7 +125,7 @@
 .show-card-container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  //grid-gap: 200px;
+  grid-gap: 20px;
 }
 .show-card-container img {
   border-radius: 50%;
@@ -138,5 +138,13 @@
 }
 .show-card-buttons {
   //height: max-content;
-  margin-top: 370px;
+  margin-top: 425px;
+  margin-left: 60px;
+}
+.show-card-buttons a {
+  color: black;
+
+}
+.show-card-buttons a:hover {
+  color: cornflowerblue;
 }
