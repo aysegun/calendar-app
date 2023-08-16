@@ -124,8 +124,8 @@
 }
 .show-card-container {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 200px;
+  grid-template-columns: 1fr 1fr 1fr;
+  //grid-gap: 200px;
 }
 .show-card-container img {
   border-radius: 50%;
@@ -135,4 +135,8 @@
 }
 .row h3 {
   text-align: end;
+}
+.show-card-buttons {
+  //height: max-content;
+  margin-top: 370px;
 }
