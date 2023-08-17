@@ -8,6 +8,7 @@
   font-family: Arial, Helvetica, sans-serif;
   background-color: #fff;
   margin-top: 125px;
+  height: 100%;
 }
 
 .calendar-title {
@@ -83,9 +84,13 @@
   background-color: #E9B384;
 }
 
-.today {
-  background-color: #f0f0f0;
+.table .today {
+  color:#ff6961;
+  border: 2px solid #ff6961;
 }
+// .table .today .day {
+//   border: 1px solid #ff6961;
+// }
 .past {
   color: #ccc;
 }
@@ -126,7 +131,7 @@
   text-align: left;
   //width: fit-content;
   box-sizing: border-box;
-  min-width: max-content; //prev month did not affect
+  min-width: max-content;
   padding: 5px;
 }
 
