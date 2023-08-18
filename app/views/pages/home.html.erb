@@ -9,7 +9,7 @@
     <% events.each do |event| %>
       <div class="card-header">
         <div class="card-title">
-          <%= link_to event.title, event %>
+          <%= link_to event.title.truncate(10, separator: /\s/), event %>
         </div>
       </div>
     <% end %>
