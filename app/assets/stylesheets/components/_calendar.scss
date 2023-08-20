@@ -51,12 +51,18 @@
 .wday-1 .card-title{
   background-color: #E0E3F4;
 }
+.wday-1 .card-title a {
+  color: #000;
+}
 .wday-2 {
   color: #000;
   border: 1px solid #ccc;
 }
 .wday-2 .card-title{
   background-color: #E8DFCA;
+}
+.wday-2 .card-title a {
+  color: #000;
 }
 .wday-3 {
   color: #000;
@@ -75,6 +81,9 @@
 }
 .wday-5 .card-title {
   background-color: #F3E9DD;
+}
+.wday-5 .card-title a {
+  color: #000;
 }
 .wday-6 {
   color: #f00;
