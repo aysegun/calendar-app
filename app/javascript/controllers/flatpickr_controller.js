@@ -4,14 +4,6 @@ import flatpickr from "flatpickr";
 
 // Connects to data-controller="flatpickr"
 export default class extends Controller {
-  // connect() {
-  //   flatpickr(this.element, {
-  //     altInput: true,
-  //     plugins: [new rangePlugin({
-  //     input: "#secondRangeInput"
-  //    })]
-  //   });
-  // }
   connect() {
     new flatpickr(this.element, {
     enableTime: true

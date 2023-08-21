@@ -10,14 +10,6 @@
             <p><span style= "font-weight: bold">Last day:</span> <%= event.end_time.strftime('%a, %B %e, %y until %l:%M %P') %></p>
           </div>
         </div>
-      <% elsif  Date.current - 1 == event.end_time.date %>
-        <div class="card" style="border: 3px solid #A7C7E7" data-controller="tooltip" data-bs-toggle="tooltip" data-bs-placement="top" title="Tomorrow is the last day!">
-          <%= image_tag "https://source.unsplash.com/GANqCr1BRTU/300x300" %>
-          <div class="card-info ms-3 mt-3">
-            <h3><%= event.title %></h3>
-            <p><span style= "font-weight: bold">Last day:</span> <%= event.end_time.strftime('%a, %B %e, %y until %l:%M %P') %></p>
-          </div>
-        </div>
       <% else %>
         <div class="card">
           <%= image_tag "https://source.unsplash.com/GANqCr1BRTU/300x300" %>
