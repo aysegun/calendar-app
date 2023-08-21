@@ -1,7 +1,14 @@
-<div class ="banner" style="background-image: url(https://source.unsplash.com/vUwJ8uu_C1M/1000x1000)", height:350;>
-  <div class ="banner-container">
+<% if flash[:notice]  %>
+  <div class ="banner" style="margin-top: 55px; background-image: url(https://source.unsplash.com/vUwJ8uu_C1M/1000x1000)", height:350;>
+    <div class ="banner-container">
+    </div>
   </div>
-</div>
+<% else %>
+  <div class ="banner" style="background-image: url(https://source.unsplash.com/vUwJ8uu_C1M/1000x1000)", height:350;>
+    <div class ="banner-container">
+    </div>
+  </div>
+<% end %>
 <div class="show-card-container mt-5">
   <div class="left-card">
     <div class= "container">
