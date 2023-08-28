@@ -4,7 +4,7 @@
     <%= link_to event_path(event) do %>
       <% if event.end_time.to_date == Date.current %>
         <div class="card" style="border: 3px solid #ff6961" data-controller="tooltip" data-bs-toggle="tooltip" data-bs-placement="top" title="You are lazy!">
-          <%= image_tag "https://source.unsplash.com/GANqCr1BRTU/300x300" %>
+          <%= image_tag "https://source.unsplash.com/KZocXyI3kRo" %>
           <div class="card-info ms-3 mt-3">
             <h3><%= event.title %></h3>
             <p><span style= "font-weight: bold">Last day:</span> <%= event.end_time.strftime('%a, %B %e, %y until %l:%M %P') %></p>
@@ -12,7 +12,7 @@
         </div>
       <% else %>
         <div class="card">
-          <%= image_tag "https://source.unsplash.com/GANqCr1BRTU/300x300" %>
+          <%= image_tag "https://source.unsplash.com/cdDDWLezAJ0" %>
           <div class="card-info ms-3 mt-3">
             <h3><%= event.title %></h3>
             <p><span style= "font-weight: bold">Last day:</span> <%= event.end_time.strftime('%a, %B %e, %y until %l:%M %P') %></p>
